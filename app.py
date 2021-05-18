@@ -13,7 +13,7 @@ from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X = sc.fit_transform(X)
 def predict_note_authentication(chanel,region,fresh,milk,grocery,frozen,detergents,delicassen):
-  predict= model.predict(sc.transform[[fresh,milk,grocery,frozen,detergents,delicassen]]))
+  predict= model.predict(sc.transform([[fresh,milk,grocery,frozen,detergents,delicassen]]))
   print("cluster number", predict)
   if predict==[0]:
     result="Customer is careless"
